@@ -7,6 +7,7 @@ renv::install(c(
   'roxygen2',
   'pacman',
   'styler',
+  'testthat',
   'usethis'
 ))
 # Package dependencies
@@ -64,6 +65,16 @@ local({
 
   # Setup packages used by this package
   usethis::use_tidy_style(strict = TRUE)
+
+  # Add tests
+  usethis::use_testthat()
+  usethis::edit_file('tests/testthat/test_locus.R')
+  devtools::test()
+
+  # Commit tests
+  devtools::document()
+  git2r::add(path = '*')
+  git2r::commit(message = 'added trivial test')
 })
 
 
