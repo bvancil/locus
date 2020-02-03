@@ -1,0 +1,24 @@
+Package: locus
+Title: Location-based Datasets for the U.S.
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Brian",
+           family = "Vancil",
+           role = c("aut", "cre"),
+           email = "brian@vancil.name",
+           comment = c(ORCID = "https://orcid.org/0000-0003-1145-3681"))
+Description: Location-based datasets for the U.S. related
+    to population, quality of life, social determinants of health, and
+    climate susceptibility
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    arrow,
+    dplyr,
+    readr,
+    readxl,
+    rlang,
+    tibble,
+    tidyr
+RoxygenNote: 7.0.2
