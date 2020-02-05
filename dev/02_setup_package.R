@@ -76,6 +76,9 @@ local({
   devtools::document()
   git2r::add(path = '*')
   git2r::commit(message = 'added trivial test')
+
+  # Add data directory
+  usethis::use_data_raw()
 })
 
 
