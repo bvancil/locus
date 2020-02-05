@@ -14,6 +14,7 @@ renv::install(c(
 renv::install(c(
   'arrow',
   'dplyr',
+  'drake',
   'rlang',
   'readr',
   'readxl',
