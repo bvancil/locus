@@ -18,6 +18,7 @@ renv::install(c(
   'rlang',
   'readr',
   'readxl',
+  'reticulate',
   'tibble',
   'tidyr'
 ))
@@ -53,8 +54,10 @@ local({
   # Use packages
   usethis::use_package('arrow')
   usethis::use_package('dplyr')
+  usethis::use_package('drake')
   usethis::use_package('readr')
   usethis::use_package('readxl')
+  usethis::use_package('reticulate')
   usethis::use_package('rlang')
   usethis::use_package('tibble')
   usethis::use_package('tidyr')
